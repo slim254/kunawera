@@ -1,0 +1,20 @@
+{%extends "homepage/base.html"%}
+{%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'homepage/main.css' %}">
+
+{%block content%}
+{%for post in jobs %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{post.employer}}</a>
+            <small class="text-muted">{{post.date_posted|date:"F d ,Y"}}</small>
+        </div>
+        <h2><a class="job_title " HREF="#">{{post.job_title}}</a> </h2>
+        <p class="article-content">{{post.description}}</p>
+        <p>Contact:{{post.contact_phone}}</p>
+    </div>
+</article>
+<hr>
+{%endfor%}
+{%endblock content%}

@@ -1,0 +1,22 @@
+hr{
+ border: .5px solid #fff6000;
+    margin-top: 50px;
+}
+*{
+padding:0;
+margin:0;
+margin-top:10px;
+}
+
+.footer container{
+justify-content:centre;
+
+}
+footer{
+font-size:.7em;
+fontfamily:arial;
+color:maroon;
+}
+
+
+
